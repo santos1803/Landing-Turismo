@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+   
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body class="hidden">
+    <!--El Preload de la pagina-->
+   
+    <!--Aqui termina el Preload-->
+
+    <!--Cabecera de la pagina-->
+    <header class="header fade-in-fwd" id="principal">
+        <!--Barra de navegacion de la pagina-->
+        <nav class="nav scroll " >
+            <section class="logo">
+                <a href="#principal"><img class="" src="./recursos/travel-svgrepo-com.svg" alt=""></a>
+
+            </section>
+            <section class="enlace">
+                <section class="enlaceLink">
+                    <a class="linkes" href="#explora">Explora</a>
+                </section>
+                <section class="enlaceLink">
+                    <a class="linkes" href="#experiencia">Experiencia</a>
+                </section>
+                <section class="enlaceLink">
+                    <a class="linkes" href="#descubre">Descubre</a>
+                </section>
+                <section class="enlaceLink">
+                    <a class="linkes" href="#destinos">Destinos</a>
+                </section>
+                <section class="enlaceLink">
+                    <a class="linkes" href="#contacto">Contacto</a>
+                </section>
+
+            </section>
+            <section class="menu">
+                <ul class="lista__menu">
+                    <li class="elemento__lista">
+                        <a href="#" id="mostrar" onclick="mostrar();"><svg viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H20C20.5523 7 21 6.55228 21 6C21 5.44772 20.5523 5 20 5H4ZM3 12C3 11.4477 3.44772 11 4 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H4C3.44772 13 3 12.5523 3 12ZM3 18C3 17.4477 3.44772 17 4 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H4C3.44772 19 3 18.5523 3 18Z"
+                                        fill="#ffffff"></path>
+                                </g>
+                            </svg></a>
+                        <ul class="aparece" id="cvs">
+                            <li class="closeddd"><a class="closed" href="#principal" id="cerrar" onclick="cerrar();"><img
+                                        src="./recursos/close-tab-svgrepo-com.svg" alt=""></a></li>
+                            <li><img class="imagen__perfil" src="./recursos/pexels-ruiyang-zhang-3204950.jpg" alt="">
+                            </li>
+                            <li class="aparece__elemento"> <img class="arrow"
+                                    src="./recursos/arrow-up-right-svgrepo-com.svg" alt="">
+                                <a href="#explora">Explora</a>
+                            </li>
+                            <li class="aparece__elemento"> <img class="arrow"
+                                    src="./recursos/arrow-up-right-svgrepo-com.svg" alt="">
+                                <a href="#experiencia">Experiencia</a>
+                            </li>
+                            <li class="aparece__elemento"> <img class="arrow"
+                                    src="./recursos/arrow-up-right-svgrepo-com.svg" alt="">
+                                <a href="#descubre">Descubre</a>
+                            </li>
+                            <li class="aparece__elemento"> <img class="arrow"
+                                    src="./recursos/arrow-up-right-svgrepo-com.svg" alt="">
+                                <a href="#destinos">Destinos</a>
+                            </li>
+                            <li class="aparece__elemento"> <img class="arrow"
+                                    src="./recursos/arrow-up-right-svgrepo-com.svg" alt="">
+                                <a href="#contacto">Contacto</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                </ul>
+
+
+            </section></a>
+
+        </nav>
+        <!--Aqui termina la barra de navegacion-->
+
+        <!--Contenido principal-->
+        <section class="contenido" data-aos="fade-right" data-aos-offset="100" data-aos-duration="800">
+            <section class="sectionButton">
+                <button>Vive La Experiencia</button>
+            </section>
+            <section class="titulos">
+                <h1>Explora El</h1>
+                <h1>Hermoso Paisaje</h1>
+                <h1>Asiatico Ahora</h1>
+            </section>
+            <section class="sectionButton sectionButton--a">
+                <button>Comenzar</button>
+            </section>
+        </section>
+        <section class="contenidoDos" data-aos="fade-up" data-aos-duration="800">
+            <section class="relleno">
+                <section class="rellenoSvg"><svg class="reloj" fill="#000000" viewBox="-8.32 -8.32 48.64 48.64"
+                        version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#000000" stroke-width="0.032">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <title>time</title>
+                            <path
+                                d="M0 16q0-3.232 1.28-6.208t3.392-5.12 5.12-3.392 6.208-1.28q3.264 0 6.24 1.28t5.088 3.392 3.392 5.12 1.28 6.208q0 3.264-1.28 6.208t-3.392 5.12-5.12 3.424-6.208 1.248-6.208-1.248-5.12-3.424-3.392-5.12-1.28-6.208zM4 16q0 3.264 1.6 6.048t4.384 4.352 6.016 1.6 6.016-1.6 4.384-4.352 1.6-6.048-1.6-6.016-4.384-4.352-6.016-1.632-6.016 1.632-4.384 4.352-1.6 6.016zM14.016 16v-5.984q0-0.832 0.576-1.408t1.408-0.608 1.408 0.608 0.608 1.408v4h4q0.8 0 1.408 0.576t0.576 1.408-0.576 1.44-1.408 0.576h-6.016q-0.832 0-1.408-0.576t-0.576-1.44z">
+                            </path>
+                        </g>
+                    </svg></section>
+
+                <p>El tiempo con notros son acortados, porque contamos con un grupo de profesionales capaces de ayudarte
+                    a vivir lo mejor de Asia en los mejores tiempos</p>
+
+            </section>
+            <section class="relleno">
+                <section class="rellenoSvg"><svg class="reloj" viewBox="-7.44 -7.44 38.88 38.88" id="Layer_1"
+                        data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: none;
+                                        stroke: #ffffff;
+                                        stroke-miterlimit: 10;
+                                        stroke-width: 1.91px;
+                                    }
+                                </style>
+                            </defs>
+                            <path class="cls-1"
+                                d="M22.5,22.5H1.5L9.37,3.27A2.85,2.85,0,0,1,12,1.5h0a2.85,2.85,0,0,1,2.63,1.77Z"></path>
+                            <polyline class="cls-1" points="7.17 8.63 10.09 10.09 12 7.23 13.91 8.18 16.09 6.82">
+                            </polyline>
+                        </g>
+                    </svg></section>
+
+                <p>Las mejores experiencias de Asia estan al alcance de tu mano, no desproveches el momento, revive tu
+                    espiritu aventurero y podras llegar </p>
+            </section>
+
+        </section>
+        <!--Aqui termina el contenido principal-->
+    </header>
+    <!--Aqui termina la cabecera-->
+
+    <!--Aqui empieza la seccion de explora-->
+    <article class="experiencia" >
+        <section class="experienciaGrid" id="explora">
+            <section class="keleng" data-aos="fade-in" data-aos-offset="150" data-aos-duration="800">
+                <section class="texto">
+                    <section class="textoAparece">
+                        <h3>Kelingking Beach</h3>
+                        <ul>
+                            <li>3 Dias</li>
+                            <li>2 Noches</li>
+                            <li>Comidas incluidas</li>
+                            <li>Transporte incluido</li>
+                            <li>Tour a las islas cercanas</li>
+                        </ul>
+                    </section>
+                </section>
+            </section>
+            <section class="grids" data-aos="fade-in" data-aos-offset="250" data-aos-duration="800">
+                <section class="texto texto--a">
+                    <section class="textoAparece">
+                        <h3>El Gran Palacio</h3>
+                        <ul>
+                            <li>3 Dias</li>
+                            <li>2 Noches</li>
+                            <li>Comidas incluidas</li>
+                            <li>Transporte incluido</li>
+
+                        </ul>
+                    </section>
+                </section>
+            </section>
+            <section class="grids grids--a " data-aos="fade-in" data-aos-offset="380" data-aos-duration="800">
+                <section class="texto texto--a">
+                    <section class="textoAparece">
+                        <h3>Cappadocia</h3>
+                        <ul>
+                            <li>3 Dias</li>
+                            <li>2 Noches</li>
+                            <li>Comidas incluidas</li>
+                            <li>Transporte incluido</li>
+                            <li>Tour a las islas cercanas</li>
+                        </ul>
+                    </section>
+                </section>
+            </section>
+            <section class="grids grids--b" data-aos="fade-in" data-aos-offset="350" data-aos-duration="800">
+                <section class="texto texto--b">
+                    <section class="textoAparece">
+                        <h3>Isla de Padar</h3>
+                        <ul>
+                            <li>3 Dias</li>
+                            <li>2 Noches</li>
+                            <li>Comidas incluidas</li>
+                            <li>Transporte incluido</li>
+                            <li>Tour a las islas cercanas</li>
+                        </ul>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <section class="aventura" id="experiencia">
+            <section class="letras">
+                <section class="letrasTitulos" data-aos="fade-right" data-aos-duration="500">
+                    <h1>La Experiencia De Una Aventura</h1>
+                </section>
+                <section class="letrasparrafo" data-aos="fade-right" data-aos-offset="200" data-aos-duration="500">
+                    <p>Aprovecha la oportunidad, grandes momentos te esperan en Asia, atrevete a cumplir tus sueños.
+                        Nosotros podemos hacerlo realidad, no esperes mas y contactanos</p>
+                </section>
+                <section class="letrasLista" data-aos="fade-right" data-aos-offset="300" data-aos-duration="500">
+                    <section class="contenido__letrasLista">
+                        <section class="img__letraLista">
+                            <img src="./recursos/safe-shield-2-svgrepo-com.svg" alt="">
+                        </section>
+                        <section class="texto__letrasLista">
+                            <h2>Viaje Seguro</h2>
+                            <p>En este sentido, Trustpilot brinda de manera satisfactoria la confianza necesaria para el
+                                cliente en cuanto a la comunicación de sus necesidades</p>
+                        </section>
+                    </section>
+                    <section class="contenido__letrasLista">
+                        <section class="img__letraLista">
+                            <img src="./recursos/money-cash-svgrepo-com.svg" alt="">
+                        </section>
+                        <section class="texto__letrasLista">
+                            <h2>Los Mejores Precios</h2>
+                            <p>En este sentido, Trustpilot brinda de manera satisfactoria la confianza necesaria para el
+                                cliente en cuanto a la comunicación de sus necesidades</p>
+                        </section>
+                    </section>
+                    <section class="contenido__letrasLista">
+                        <section class="img__letraLista">
+                            <img src="./recursos/hotel-fill-service-travel-svgrepo-com.svg" alt="">
+                        </section>
+                        <section class="texto__letrasLista">
+                            <h2>
+                                Confort
+                            </h2>
+                            <p>En este sentido, Trustpilot brinda de manera satisfactoria la confianza necesaria para el
+                                cliente en cuanto a la comunicación de sus necesidades</p>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="videoPlaya" data-aos="fade-left" data-aos-offset="300" data-aos-duration="500">
+                <video src="./recursos/production_id_4462348 (1080p).mp4" autoplay loop muted </video>
+            </section>
+
+        </section>
+
+    </article>
+    <!--Aqui termina la seccion de explora-->
+
+    <!--Aqui empieza la seccion descubre-->
+    <article class="descubre" id="descubre">
+        <section class="descubreTitulo" data-aos="fade-up" data-aos-offset="100" data-aos-duration="500">
+            <h1>Descubre Un Paisaje Fascinante Una Cultura Impresionante</h1>
+        </section>
+        <section class="descubreContenido" data-aos="fade-up" data-aos-offset="200" data-aos-duration="550">
+            <p>Cobertura adicional en exceso del beneficio principal, para compensar las penalizaciones debidas a la
+                cancelación de viajes por una causa justificada</p>
+            <button id="leer">LEER MAS</button>
+        </section>
+    </article>
+    <article class="descubreVideo">
+        <video src="./recursos/pexels_videos_2169879 (720p).mp4" autoplay loop muted data-aos="fade"
+            data-aos-offset="400" data-aos-duration="500"></video>
+    </article>
+    <article class="opiniones">
+        <div class="wrapper" data-aos="fade-up" data-aos-offset="250" data-aos-duration="100">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <ul class="carousel">
+                <li class="card">
+                    <div class="img"><img src="./recursos/img-1.jpg" alt="img" draggable="false"></div>
+                    <h2>Blanche Pearson</h2>
+                    <span>"Asombroso"</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="./recursos/pexels-the-lazy-artist-gallery-999267.jpg" alt="img"
+                            draggable="false"></div>
+                    <h2>Joenas Brauers</h2>
+                    <span>"Increible"</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="./recursos/pexels-tima-miroshnichenko-5717583.jpg" alt="img"
+                            draggable="false"></div>
+                    <h2>Lariach French</h2>
+                    <span>"Los Mejores"</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="./recursos/pexels-dinielle-de-veyra-4195342.jpg" alt="img"
+                            draggable="false"></div>
+                    <h2>James Khosravi</h2>
+                    <span>"Profesionales"</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="./recursos/pexels-edmond-dantès-4342352.jpg" alt="img" draggable="false">
+                    </div>
+                    <h2>Kristina Zasiadko</h2>
+                    <span>"Son Unicos"</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="./recursos/pexels-andrea-piacquadio-3783577.jpg" alt="img"
+                            draggable="false"></div>
+                    <h2>Donald Horton</h2>
+                    <span>"Inolvidables"</span>
+                </li>
+            </ul>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+    </article>
+    <!--Aqui termina la seccion descubre-->
+
+
+    <!--Aqui empieza seccion destinos-->
+    <article class="destinos descubre descubre--a" id="destinos">
+        <section class="descubreTitulo descubreTitulo--a" data-aos="fade-right">
+            <h1>Comienza Tu Vida Explorando Un Nuevo Destino</h1>
+        </section>
+        <section class="descubreContenido descubreContenido--a" data-aos="fade-left">
+            <p id="hola">Cobertura adicional en exceso del beneficio principal, para compensar las penalizaciones
+                debidas a la
+                cancelación de viajes por una causa justificada</p>
+            <section class="buttonsss">
+                <button id="botonUno">NOSTROS</button>
+                <button id="botonDos">EXPLORA</button>
+            </section>
+        </section>
+    </article>
+    <article class="cartas">
+        <div class="flip-card" data-aos="fade-down" data-aos-offset="50" data-aos-duration="500">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <section class="glass">
+                        <section class="titulo__carta">
+                            <h2>Pucket</h2>
+                            <p>Start From</p>
+                        </section>
+                        <section class="precios">
+                            <section class="img__place">
+                                <img src="./recursos/place-svgrepo-com.svg" alt="">
+                                <p>Myanmar</p>
+                            </section>
+                            <section class="price">
+                                <p>$20</p>
+                            </section>
+                        </section>
+                    </section>
+
+                </div>
+                <div class="flip-card-back">
+                    <section class="back__titulo">
+                        <section class="vip">
+                            <section class="titulopremium">
+                                <h1>Phuket Premium</h1>
+                            </section>
+                            <section class="img__premium">
+                                <img src="./recursos/premium-svgrepo-com.svg" alt="">
+                            </section>
+                        </section>
+                        <section class="letrasLista letrasLista--a" >
+                            <section class="contenido__letrasLista contenido__letrasLista--a">
+                                <section class="img__letraLista img__letraLista--a">
+                                    <img src="./recursos/safe-shield-2-svgrepo-com.svg" alt="">
+                                </section>
+                                <section class="texto__letrasLista texto__letrasLista--a">
+                                    <h2>Viaje Seguro</h2>
+                                    
+                                </section>
+                            </section>
+                            <section class="contenido__letrasLista contenido__letrasLista--a">
+                                <section class="img__letraLista img__letraLista--a">
+                                    <img src="./recursos/money-cash-svgrepo-com.svg" alt="">
+                                </section>
+                                <section class="texto__letrasLista texto__letrasLista--a">
+                                    <h2>Los Mejores Precios</h2>
+                                    
+                                </section>
+                            </section>
+                            <section class="contenido__letrasLista contenido__letrasLista--a">
+                                <section class="img__letraLista img__letraLista--a">
+                                    <img src="./recursos/hotel-fill-service-travel-svgrepo-com.svg" alt="">
+                                </section>
+                                <section class="texto__letrasLista texto__letrasLista--a">
+                                    <h2>
+                                        Confort
+                                    </h2>
+                                </section>
+                            </section>
+                        </section>
+                        <section class="buttonsss buttonsss--a">
+                            <button id="botonTres">RESERVAR</button>                           
+                        </section>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card flip-card2" data-aos="fade-down" data-aos-offset="150" data-aos-duration="500">
+            <div class="flip-card-inner">
+                <div class="flip-card-front flip-card-front--a">
+                    <section class="glass">
+                        <section class="titulo__carta">
+                            <h2>Kelingking</h2>
+                            <p>Start From</p>
+                        </section>
+                        <section class="precios">
+                            <section class="img__place">
+                                <img src="./recursos/place-svgrepo-com.svg" alt="">
+                                <p>Indonesia</p>
+                            </section>
+                            <section class="price">
+                                <p>$20</p>
+                            </section>
+                        </section>
+                    </section>
+
+                </div>
+                <div class="flip-card-back">
+                    <section class="back__titulo">
+                        <section class="vip">
+                            <section class="titulopremium">
+                                <h1>Kelingking Premium</h1>
+                            </section>
+                            <section class="img__premium">
+                                <img src="./recursos/premium-svgrepo-com.svg" alt="">
+                            </section>
+                        </section>
+                        <section class="letrasLista letrasLista--a" >
+                            <section class="contenido__letrasLista contenido__letrasLista--a">
+                                <section class="img__letraLista img__letraLista--a">
+                                    <img src="./recursos/safe-shield-2-svgrepo-com.svg" alt="">
+                                </section>
+                                <section class="texto__letrasLista texto__letrasLista--a">
+                                    <h2>Viaje Seguro</h2>
+                                    
+                                </section>
+                            </section>
+                            <section class="contenido__letrasLista contenido__letrasLista--a">
+                                <section class="img__letraLista img__letraLista--a">
+                                    <img src="./recursos/money-cash-svgrepo-com.svg" alt="">
+                                </section>
+                                <section class="texto__letrasLista texto__letrasLista--a">
+                                    <h2>Los Mejores Precios</h2>
+                                    
+                                </section>
+                            </section>
+                            <section class="contenido__letrasLista contenido__letrasLista--a">
+                                <section class="img__letraLista img__letraLista--a">
+                                    <img src="./recursos/hotel-fill-service-travel-svgrepo-com.svg" alt="">
+                                </section>
+                                <section class="texto__letrasLista texto__letrasLista--a">
+                                    <h2>
+                                        Confort
+                                    </h2>
+                                </section>
+                            </section>
+                        </section>
+                        <section class="buttonsss buttonsss--a">
+                            <button id="botonTres">RESERVAR</button>                           
+                        </section>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card flip-card3" data-aos="fade-down" data-aos-offset="250" data-aos-duration="500">
+            <div class="flip-card-inner">
+                <div class="flip-card-front flip-card-front--b">
+                    <section class="glass">
+                        <section class="titulo__carta">
+                            <h2>Mt. Bromo</h2>
+                            <p>Start From</p>
+                        </section>
+                        <section class="precios">
+                            <section class="img__place">
+                                <img src="./recursos/place-svgrepo-com.svg" alt="">
+                                <p>Indonesia</p>
+                            </section>
+                            <section class="price">
+                                <p>$35</p>
+                            </section>
+                        </section>
+                    </section>
+
+                </div>
+                <div class="flip-card-back">
+                    <section class="back__titulo">
+                        <section class="vip">
+                            <section class="titulopremium">
+                                <h1>Bromo Premium</h1>
+                            </section>
+                            <section class="img__premium">
+                                <img src="./recursos/premium-svgrepo-com.svg" alt="">
+                            </section>
+                        </section>
+                        <section class="letrasLista letrasLista--a" >
+                            <section class="contenido__letrasLista contenido__letrasLista--a">
+                                <section class="img__letraLista img__letraLista--a">
+                                    <img src="./recursos/safe-shield-2-svgrepo-com.svg" alt="">
+                                </section>
+                                <section class="texto__letrasLista texto__letrasLista--a">
+                                    <h2>Viaje Seguro</h2>
+                                    
+                                </section>
+                            </section>
+                            <section class="contenido__letrasLista contenido__letrasLista--a">
+                                <section class="img__letraLista img__letraLista--a">
+                                    <img src="./recursos/money-cash-svgrepo-com.svg" alt="">
+                                </section>
+                                <section class="texto__letrasLista texto__letrasLista--a">
+                                    <h2>Los Mejores Precios</h2>
+                                    
+                                </section>
+                            </section>
+                            <section class="contenido__letrasLista contenido__letrasLista--a">
+                                <section class="img__letraLista img__letraLista--a">
+                                    <img src="./recursos/hotel-fill-service-travel-svgrepo-com.svg" alt="">
+                                </section>
+                                <section class="texto__letrasLista texto__letrasLista--a">
+                                    <h2>
+                                        Confort
+                                    </h2>
+                                </section>
+                            </section>
+                        </section>
+                        <section class="buttonsss buttonsss--a">
+                            <button id="botonTres">RESERVAR</button>                           
+                        </section>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card flip-card4" data-aos="fade-down" data-aos-offset="350" data-aos-duration="500">
+            <div class="flip-card-inner">
+                <div class="flip-card-front flip-card-front--c">
+                    <section class="glass">
+                        <section class="titulo__carta">
+                            <h2>Old Bagan</h2>
+                            <p>Start From</p>
+                        </section>
+                        <section class="precios">
+                            <section class="img__place">
+                                <img src="./recursos/place-svgrepo-com.svg" alt="">
+                                <p>Myanmar</p>
+                            </section>
+                            <section class="price">
+                                <p>$18</p>
+                            </section>
+                        </section>
+                    </section>
+
+                </div>
+                <div class="flip-card-back">
+                    <section class="back__titulo">
+                        <section class="vip">
+                            <section class="titulopremium">
+                                <h1>Old Bagan Premium</h1>
+                            </section>
+                            <section class="img__premium">
+                                <img src="./recursos/premium-svgrepo-com.svg" alt="">
+                            </section>
+                        </section>
+                        <section class="letrasLista letrasLista--a" >
+                            <section class="contenido__letrasLista contenido__letrasLista--a">
+                                <section class="img__letraLista img__letraLista--a">
+                                    <img src="./recursos/safe-shield-2-svgrepo-com.svg" alt="">
+                                </section>
+                                <section class="texto__letrasLista texto__letrasLista--a">
+                                    <h2>Viaje Seguro</h2>
+                                    
+                                </section>
+                            </section>
+                            <section class="contenido__letrasLista contenido__letrasLista--a">
+                                <section class="img__letraLista img__letraLista--a">
+                                    <img src="./recursos/money-cash-svgrepo-com.svg" alt="">
+                                </section>
+                                <section class="texto__letrasLista texto__letrasLista--a">
+                                    <h2>Los Mejores Precios</h2>
+                                    
+                                </section>
+                            </section>
+                            <section class="contenido__letrasLista contenido__letrasLista--a">
+                                <section class="img__letraLista img__letraLista--a">
+                                    <img src="./recursos/hotel-fill-service-travel-svgrepo-com.svg" alt="">
+                                </section>
+                                <section class="texto__letrasLista texto__letrasLista--a">
+                                    <h2>
+                                        Confort
+                                    </h2>
+                                </section>
+                            </section>
+                        </section>
+                        <section class="buttonsss buttonsss--a">
+                            <button id="botonTres">RESERVAR</button>                           
+                        </section>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card flip-card5" data-aos="fade-up" data-aos-offset="100" data-aos-duration="500">
+            <div class="flip-card-inner">
+                <div class="flip-card-front flip-card-front--d">
+                    <section class="glass">
+                        <section class="titulo__carta">
+                            <h2>Ubud</h2>
+                            <p>Start From</p>
+                        </section>
+                        <section class="precios">
+                            <section class="img__place">
+                                <img src="./recursos/place-svgrepo-com.svg" alt="">
+                                <p>Indonesia</p>
+                            </section>
+                            <section class="price">
+                                <p>$18</p>
+                            </section>
+                        </section>
+                    </section>
+
+                </div>
+                <div class="flip-card-back">
+                    <section class="back__titulo">
+                        <section class="vip">
+                            <section class="titulopremium">
+                                <h1>Ubud</h1>
+                            </section>
+                            <section class="img__premium">
+                                <img src="./recursos/premium-svgrepo-com.svg" alt="">
+                            </section>
+                        </section>
+                        <section class="letrasLista letrasLista--a" >
+                            <section class="contenido__letrasLista contenido__letrasLista--a">
+                                <section class="img__letraLista img__letraLista--a">
+                                    <img src="./recursos/safe-shield-2-svgrepo-com.svg" alt="">
+                                </section>
+                                <section class="texto__letrasLista texto__letrasLista--a">
+                                    <h2>Viaje Seguro</h2>
+                                    
+                                </section>
+                            </section>
+                            <section class="contenido__letrasLista contenido__letrasLista--a">
+                                <section class="img__letraLista img__letraLista--a">
+                                    <img src="./recursos/money-cash-svgrepo-com.svg" alt="">
+                                </section>
+                                <section class="texto__letrasLista texto__letrasLista--a">
+                                    <h2>Los Mejores Precios</h2>
+                                    
+                                </section>
+                            </section>
+                            <section class="contenido__letrasLista contenido__letrasLista--a">
+                                <section class="img__letraLista img__letraLista--a">
+                                    <img src="./recursos/hotel-fill-service-travel-svgrepo-com.svg" alt="">
+                                </section>
+                                <section class="texto__letrasLista texto__letrasLista--a">
+                                    <h2>
+                                        Confort
+                                    </h2>
+                                </section>
+                            </section>
+                        </section>
+                        <section class="buttonsss buttonsss--a">
+                            <button id="botonTres">RESERVAR</button>                           
+                        </section>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card flip-card6" data-aos="fade-up" data-aos-offset="200" data-aos-duration="500">
+            <div class="flip-card-inner">
+                <div class="flip-card-front flip-card-front--e">
+                    <section class="glass">
+                        <section class="titulo__carta">
+                            <h2>Marina Bay</h2>
+                            <p>Start From</p>
+                        </section>
+                        <section class="precios">
+                            <section class="img__place">
+                                <img src="./recursos/place-svgrepo-com.svg" alt="">
+                                <p>Singapur</p>
+                            </section>
+                            <section class="price">
+                                <p>$24</p>
+                            </section>
+                        </section>
+                    </section>
+
+                </div>
+                <div class="flip-card-back">
+                    <section class="back__titulo">
+                        <section class="vip">
+                            <section class="titulopremium">
+                                <h1>Marina Bay</h1>
+                            </section>
+                            <section class="img__premium">
+                                <img src="./recursos/premium-svgrepo-com.svg" alt="">
+                            </section>
+                        </section>
+                        <section class="letrasLista letrasLista--a" >
+                            <section class="contenido__letrasLista contenido__letrasLista--a">
+                                <section class="img__letraLista img__letraLista--a">
+                                    <img src="./recursos/safe-shield-2-svgrepo-com.svg" alt="">
+                                </section>
+                                <section class="texto__letrasLista texto__letrasLista--a">
+                                    <h2>Viaje Seguro</h2>
+                                    
+                                </section>
+                            </section>
+                            <section class="contenido__letrasLista contenido__letrasLista--a">
+                                <section class="img__letraLista img__letraLista--a">
+                                    <img src="./recursos/money-cash-svgrepo-com.svg" alt="">
+                                </section>
+                                <section class="texto__letrasLista texto__letrasLista--a">
+                                    <h2>Los Mejores Precios</h2>
+                                    
+                                </section>
+                            </section>
+                            <section class="contenido__letrasLista contenido__letrasLista--a">
+                                <section class="img__letraLista img__letraLista--a">
+                                    <img src="./recursos/hotel-fill-service-travel-svgrepo-com.svg" alt="">
+                                </section>
+                                <section class="texto__letrasLista texto__letrasLista--a">
+                                    <h2>
+                                        Confort
+                                    </h2>
+                                </section>
+                            </section>
+                        </section>
+                        <section class="buttonsss buttonsss--a">
+                            <button id="botonTres">RESERVAR</button>                           
+                        </section>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card flip-card7" data-aos="fade-up" data-aos-offset="300" data-aos-duration="500">
+            <div class="flip-card-inner">
+                <div class="flip-card-front flip-card-front--f">
+                    <section class="glass">
+                        <section class="titulo__carta">
+                            <h2>Mt. Fuji</h2>
+                            <p>Start From</p>
+                        </section>
+                        <section class="precios">
+                            <section class="img__place">
+                                <img src="./recursos/place-svgrepo-com.svg" alt="">
+                                <p>Japon</p>
+                            </section>
+                            <section class="price">
+                                <p>$48</p>
+                            </section>
+                        </section>
+                    </section>
+
+                </div>
+                <div class="flip-card-back">
+                    <section class="back__titulo">
+                        <section class="vip">
+                            <section class="titulopremium">
+                                <h1>Mt. Fuji</h1>
+                            </section>
+                            <section class="img__premium">
+                                <img src="./recursos/premium-svgrepo-com.svg" alt="">
+                            </section>
+                        </section>
+                        <section class="letrasLista letrasLista--a" >
+                            <section class="contenido__letrasLista contenido__letrasLista--a">
+                                <section class="img__letraLista img__letraLista--a">
+                                    <img src="./recursos/safe-shield-2-svgrepo-com.svg" alt="">
+                                </section>
+                                <section class="texto__letrasLista texto__letrasLista--a">
+                                    <h2>Viaje Seguro</h2>
+                                    
+                                </section>
+                            </section>
+                            <section class="contenido__letrasLista contenido__letrasLista--a">
+                                <section class="img__letraLista img__letraLista--a">
+                                    <img src="./recursos/money-cash-svgrepo-com.svg" alt="">
+                                </section>
+                                <section class="texto__letrasLista texto__letrasLista--a">
+                                    <h2>Los Mejores Precios</h2>
+                                    
+                                </section>
+                            </section>
+                            <section class="contenido__letrasLista contenido__letrasLista--a">
+                                <section class="img__letraLista img__letraLista--a">
+                                    <img src="./recursos/hotel-fill-service-travel-svgrepo-com.svg" alt="">
+                                </section>
+                                <section class="texto__letrasLista texto__letrasLista--a">
+                                    <h2>
+                                        Confort
+                                    </h2>
+                                </section>
+                            </section>
+                        </section>
+                        <section class="buttonsss buttonsss--a">
+                            <button id="botonTres">RESERVAR</button>                           
+                        </section>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card flip-card8" data-aos="fade-up" data-aos-offset="400" data-aos-duration="500">
+            <div class="flip-card-inner">
+                <div class="flip-card-front flip-card-front--g">
+                    <section class="glass">
+                        <section class="titulo__carta">
+                            <h2>Padar</h2>
+                            <p>Start From</p>
+                        </section>
+                        <section class="precios">
+                            <section class="img__place">
+                                <img src="./recursos/place-svgrepo-com.svg" alt="">
+                                <p>Indonesia</p>
+                            </section>
+                            <section class="price">
+                                <p>$25</p>
+                            </section>
+                        </section>
+                    </section>
+
+                </div>
+                <div class="flip-card-back">
+                    <section class="back__titulo">
+                        <section class="vip">
+                            <section class="titulopremium">
+                                <h1>Padar</h1>
+                            </section>
+                            <section class="img__premium">
+                                <img src="./recursos/premium-svgrepo-com.svg" alt="">
+                            </section>
+                        </section>
+                        <section class="letrasLista letrasLista--a" >
+                            <section class="contenido__letrasLista contenido__letrasLista--a">
+                                <section class="img__letraLista img__letraLista--a">
+                                    <img src="./recursos/safe-shield-2-svgrepo-com.svg" alt="">
+                                </section>
+                                <section class="texto__letrasLista texto__letrasLista--a">
+                                    <h2>Viaje Seguro</h2>
+                                    
+                                </section>
+                            </section>
+                            <section class="contenido__letrasLista contenido__letrasLista--a">
+                                <section class="img__letraLista img__letraLista--a">
+                                    <img src="./recursos/money-cash-svgrepo-com.svg" alt="">
+                                </section>
+                                <section class="texto__letrasLista texto__letrasLista--a">
+                                    <h2>Los Mejores Precios</h2>
+                                    
+                                </section>
+                            </section>
+                            <section class="contenido__letrasLista contenido__letrasLista--a">
+                                <section class="img__letraLista img__letraLista--a">
+                                    <img src="./recursos/hotel-fill-service-travel-svgrepo-com.svg" alt="">
+                                </section>
+                                <section class="texto__letrasLista texto__letrasLista--a">
+                                    <h2>
+                                        Confort
+                                    </h2>
+                                </section>
+                            </section>
+                        </section>
+                        <section class="buttonsss buttonsss--a">
+                            <button id="botonTres">RESERVAR</button>                           
+                        </section>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!--Aqui termina la seccion destinos-->
+
+    <!--Aqui empieza la seccion contactos-->
+    <article class="contacto" id="contacto">
+        <article class="descubre">
+            <section class="descubreTitulo" data-aos="fade-right" data-aos-offset="100" data-aos-duration="500">               
+                <h1>Disfruta De Nuestro Maravilloso Tour Con La Mejor Calidad</h1>
+            </section>
+            <section class="descubreContenido" data-aos="fade-left" data-aos-offset="100" data-aos-duration="500">
+                <p>Cobertura adicional en exceso del beneficio principal, para compensar las penalizaciones debidas a la
+                    cancelación de viajes por una causa justificada</p>
+                <button>LEER MAS</button>
+            </section>
+        </article>
+        <article class="formulario" data-aos="fade">
+            <div class="container__tres" id="contacto" data-aos="fade-down" data-aos-offset="150">
+                <form class="form">
+                    <input class="input" type="text" placeholder="Nombre">
+                    <input class="input" type="text" placeholder="Email">
+                    <textarea class="textarea" placeholder="Tu mensaje..."></textarea>
+                    <button class="button">Enviar</button>
+                </form>
+            </div>
+            <nav class=" nav--a scroll ">
+                <section class="logo logo--a" data-aos="fade-right" data-aos-offset="0">
+                    <a href="#principal"><img class="" src="./recursos/travel-svgrepo-com.svg" alt=""></a>
+    
+                </section>
+                <section class="enlace">
+                    <section class="enlaceLink enlaceLink--a" data-aos="fade-right" data-aos-offset="0">
+                        <a class="linkes" href="#explora">Explora</a>
+                    </section>
+                    <section class="enlaceLink enlaceLink--a" data-aos="fade-right" data-aos-offset="0">
+                        <a class="linkes" href="#experiencia">Experiencia</a>
+                    </section>
+                    <section class="enlaceLink enlaceLink--a" data-aos="fade-right" data-aos-offset="0"">
+                        <a class="linkes" href="#descubre">Descubre</a>
+                    </section>
+                    <section class="enlaceLink enlaceLink--a" data-aos="fade-right" data-aos-offset="0"">
+                        <a class="linkes" href="#destinos">Destinos</a>
+                    </section>
+                    <section class="enlaceLink enlaceLink--a" data-aos="fade-right" data-aos-offset="0"">
+                        <a class="linkes" href="#contacto">Contacto</a>
+                    </section>
+    
+                </section>
+    
+            </nav>
+        </article>
+        
+    </article>
+    <!--termina la seccion de contacto-->
+
+    <!--scropts de la pagina-->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="codigo.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
